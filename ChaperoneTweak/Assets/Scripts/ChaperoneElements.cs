@@ -224,7 +224,7 @@ public class ChaperoneElements : MonoBehaviour
 
         SteamVR_Utils.RigidTransform rt = new SteamVR_Utils.RigidTransform();
         rt.pos = PlaySpace.transform.position;
-        rt.rot = PlaySpace.transform.rotation * Quaternion.Euler(-45f,0f,-45f);//
+        rt.rot = PlaySpace.transform.rotation;
 
         HmdMatrix34_t mat = rt.ToHmdMatrix34();
         OpenVR.ChaperoneSetup.SetWorkingStandingZeroPoseToRawTrackingPose(ref mat);
