@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/RoomSetup.unity
+  isLoaded: 1
+  isActive: 1
